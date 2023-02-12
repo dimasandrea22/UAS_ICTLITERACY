@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A91E42BA-1972-4729-B17E-B44A62BC05A5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>UTS.My.MyApplication</StartupObject>
+    <RootNamespace>UTS</RootNamespace>
+    <AssemblyName>UTS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>UTS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>UTS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Balok.Designer.vb">
+      <DependentUpon>Balok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Balok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BelahKetupat.Designer.vb">
+      <DependentUpon>BelahKetupat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BelahKetupat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bola.Designer.vb">
+      <DependentUpon>Bola.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bola.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRuang.Designer.vb">
+      <DependentUpon>FormRuang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRuang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JajarGenjang.Designer.vb">
+      <DependentUpon>JajarGenjang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JajarGenjang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kalkulator.Designer.vb">
+      <DependentUpon>Kalkulator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kalkulator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kerucut.Designer.vb">
+      <DependentUpon>Kerucut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kerucut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kubus.Designer.vb">
+      <DependentUpon>Kubus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kubus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayangLayang.Designer.vb">
+      <DependentUpon>LayangLayang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LayangLayang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDatar.Designer.vb">
+      <DependentUpon>FormDatar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDatar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPilihan.Designer.vb">
+      <DependentUpon>FormPilihan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPilihan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimasSegi3.Designer.vb">
+      <DependentUpon>LimasSegi3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LimasSegi3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimasSegi4.Designer.vb">
+      <DependentUpon>LimasSegi4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LimasSegi4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lingkaran.Designer.vb">
+      <DependentUpon>Lingkaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lingkaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Persegi.Designer.vb">
+      <DependentUpon>Persegi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Persegi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersegiPanjang.Designer.vb">
+      <DependentUpon>PersegiPanjang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PersegiPanjang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrismaSegi3.Designer.vb">
+      <DependentUpon>PrismaSegi3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrismaSegi3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Segitiga.Designer.vb">
+      <DependentUpon>Segitiga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Segitiga.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tabung.Designer.vb">
+      <DependentUpon>Tabung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tabung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trapesium.Designer.vb">
+      <DependentUpon>Trapesium.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Trapesium.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Balok.resx">
+      <DependentUpon>Balok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BelahKetupat.resx">
+      <DependentUpon>BelahKetupat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bola.resx">
+      <DependentUpon>Bola.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDatar.resx">
+      <DependentUpon>FormDatar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPilihan.resx">
+      <DependentUpon>FormPilihan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRuang.resx">
+      <DependentUpon>FormRuang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JajarGenjang.resx">
+      <DependentUpon>JajarGenjang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kalkulator.resx">
+      <DependentUpon>Kalkulator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kerucut.resx">
+      <DependentUpon>Kerucut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kubus.resx">
+      <DependentUpon>Kubus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayangLayang.resx">
+      <DependentUpon>LayangLayang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimasSegi3.resx">
+      <DependentUpon>LimasSegi3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimasSegi4.resx">
+      <DependentUpon>LimasSegi4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lingkaran.resx">
+      <DependentUpon>Lingkaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Persegi.resx">
+      <DependentUpon>Persegi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersegiPanjang.resx">
+      <DependentUpon>PersegiPanjang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrismaSegi3.resx">
+      <DependentUpon>PrismaSegi3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Segitiga.resx">
+      <DependentUpon>Segitiga.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabung.resx">
+      <DependentUpon>Tabung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trapesium.resx">
+      <DependentUpon>Trapesium.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Balok" />
+    <None Include="Resources\Balok1" />
+    <None Include="Resources\Balok2" />
+    <None Include="Resources\images.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cover-feature-mathematic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\belah ketupat.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jajar genjang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kubus" />
+    <None Include="Resources\kubus1" />
+    <None Include="Resources\kubus2" />
+    <None Include="Resources\layang layang.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LimasSegi3" />
+    <None Include="Resources\limas_segitiga_4-2194376058" />
+    <None Include="Resources\lingkaran.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persegi panjang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persegi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prisma-Segitiga" />
+    <None Include="Resources\Prisma-Segitiga1" />
+    <None Include="Resources\Segitiga.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trapesium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\datar adat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\belah ketupat1.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\datar adat1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jajar genjang1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layang layang1.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lingkaran1.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persegi panjang1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persegi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Segitiga1.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trapesium1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\belah ketupat2.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\datar adat2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jajar genjang2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layang layang2.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lingkaran2.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persegi panjang2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persegi2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Segitiga2.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trapesium2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\belah ketupat3.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\datar adat3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jajar genjang3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layang layang3.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lingkaran3.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persegi panjang3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persegi3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Segitiga3.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trapesium3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tabung-1jpg-20210205100009-2883963022.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kerucut.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
